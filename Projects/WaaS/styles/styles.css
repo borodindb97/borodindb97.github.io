@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.container {
+  background-color: #202938;
+  height: 1500px;
+}
+h1 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 67px;
+  display: inline-block;
+}
+#logo {
+  display: inline-block;
+  margin-left: 1px;
+  margin-bottom: 20px;
+}
+header {
+  float: left;
+}
+.mode {
+  display: inline-block;
+  margin-top: 40px;
+  float: left;
+  clear: left;
+}
+#sleep {
+  width: 265px;
+  height: 53px;
+  background-color: #4227ac;
+  border-radius: 10px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+#processing {
+  width: 265px;
+  height: 53px;
+  background-color: #c3802f;
+  border-radius: 10px;
+  margin-top: 31px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+#breeding {
+  width: 265px;
+  height: 53px;
+  background-color: #d64f8a;
+  border-radius: 10px;
+  margin-top: 31px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.activeMode {
+  border: solid greenyellow 2px;
+}
+.parametrs {
+  display: inline-block;
+  width: 470px;
+  margin-left: 76px;
+  padding-top: 84px;
+}
+.parametr {
+  position: relative;
+  margin-top: 10px;
+}
+h2,
+h3 {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.markup {
+  padding-bottom: 15px;
+}
+.position {
+  position: absolute;
+  display: none;
+}
+.active {
+  display: block;
+}
+.position1 {
+  right: 450px;
+  bottom: 27px;
+}
+.position2 {
+  right: 339px;
+  bottom: 27px;
+}
+.position3 {
+  right: 228px;
+  bottom: 27px;
+}
+.position4 {
+  right: 117px;
+  bottom: 27px;
+}
+.position5 {
+  right: 0;
+  bottom: 27px;
+}
+.positionText {
+  position: absolute;
+  color: #ffffff;
+}
+.position1Text {
+  right: 450px;
+  top: 63px;
+}
+.position2Text {
+  right: 339px;
+  top: 63px;
+}
+.position3Text {
+  right: 228px;
+  top: 63px;
+}
+.position4Text {
+  right: 117px;
+  top: 63px;
+}
+.position5Text {
+  right: 0;
+  top: 63px;
+}
+.recomendation {
+  display: inline-block;
+  width: 466px;
+  height: 455px;
+  margin-left: 72px;
+  margin-top: 30px;
+}
+.success {
+  background-color: #7fba46;
+}
+.recomendBlock {
+  float: left;
+  width: 225px;
+  height: 219px;
+  background-color: #313946;
+  position: relative;
+  margin-top: 17px;
+}
+.danger {
+  background-color: #b0454b;
+}
+h3 {
+  margin: 16px 0 0 17px;
+}
+#humidityBlock,
+#foodBlock {
+  margin-left: 16px;
+}
+.recomendBlock > p {
+  width: 225px;
+  height: 64px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  padding: 2px 29px 11px 29px;
+}
+#phIcon {
+  position: absolute;
+  top: 69px;
+  left: 81px;
+}
+#temperatureIcon {
+  position: absolute;
+  top: 57px;
+  left: 98px;
+}
+#humidityIcon {
+  position: absolute;
+  top: 62px;
+  left: 80px;
+}
+#foodIcon {
+  position: absolute;
+  top: 71px;
+  left: 77px;
+}
+.money {
+  background: url("../images/Слой_49.png") no-repeat;
+  width: 267px;
+  height: 154px;
+  margin-top: 30px;
+  position: relative;
+}
+.money > img {
+  width: 48px;
+  height: 60px;
+  margin: 44px 0 0 22px;
+  position: absolute;
+}
+.moneyInfo {
+  width: 103px;
+  height: 12px;
+  color: #979ca2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 90px;
+  display: inline-block;
+}
+.today {
+  width: 115px;
+  margin-top: 28px;
+}
+.todayMany {
+  width: 162px;
+  height: 26px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+.yestardayMany {
+  width: 140px;
+}

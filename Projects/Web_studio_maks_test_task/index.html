@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tabs</title>
+    <style>
+
+        #panel{
+            width: 250px;
+            text-align: center;
+        }
+
+        #btns{
+            width: 150px;
+            float: left;
+        }
+
+        #btns-delete{
+            width: 50px;
+            float: left;
+        }
+
+        .btn-tab{
+            height: 50px;
+            width: 150px;
+        }
+
+        .delete{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .add{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .activeButton{
+            background-color: white;
+        }
+
+        .list{
+            display: none;
+            margin-left: 200px;
+        }
+
+        .activeList{
+            display: block;
+        }
+
+    </style>
+    <script src = jquery-3.3.1.js></script>
+    <script>
+
+        $(document).ready(function () {
+
+            //Кнопки
+            const button1 = $('#btn1');
+            const button2 = $('#btn2');
+            const button3 = $('#btn3');
+            const button4 = $('#btn4');
+
+            const delete1 = $('#delete1');
+            const delete2 = $('#delete2');
+            const delete3 = $('#delete3');
+            const delete4 = $('#delete4');
+
+            const addTabButton = $('.add');
+
+            const addItemButton = $('#sendNewItem');
+
+            //Списки
+            const list1 = $('#list1');
+            const list2 = $('#list2');
+            const list3 = $('#list3');
+            const list4 = $('#list4');
+
+            //Текущая активная кнопка
+            let activeButtonNow = button1;
+
+            //Текущий активный список
+            let activeListNow = list1;
+
+            //Последняя кнопка
+            let lastTabButton = button4;
+
+            //Выбор таба
+            function choiceTab(){
+
+                const targetId = $(this).attr('id');
+                const button = $(`#${targetId}`);
+                const numberTab = targetId.slice(3, this.length);
+                const list = $(`#list${numberTab}`);
+
+                activeButtonNow.removeClass('activeButton');
+                button.addClass('activeButton');
+                activeButtonNow = button;
+                activeListNow.removeClass('activeList');
+                list.addClass('activeList');
+                activeListNow = list;
+
+            }
+
+            //Удаление таба
+            function deleteTab(){
+
+                const buttonDelete = $(this);
+                const targetId = $(this).attr('id');
+                const numberTab = targetId.slice(6, this.length);
+                const button = $(`#btn${numberTab}`);
+                const list = $(`#list${numberTab}`);
+
+                //Если текущий таб последний
+                if (numberTab === lastTabButton.attr('id').slice(3, this.length)){
+                    lastTabButton = button.prev();
+                }
+
+                //Удаление элементов
+                button.remove();
+                list.remove();
+                buttonDelete.remove();
+
+            }
+
+            //Добавление таба
+            function addTab(){
+
+                let lastTabNumber = lastTabButton.attr('id').slice(3, this.length);
+                const tabNumber = ++lastTabNumber;
+
+                //Создание кнопок
+                const newTabButton = $('<button />', {
+                    id: `btn${tabNumber}`,
+                    class: 'btn-tab',
+                    text: 'Новый таб'
+                });
+
+                const newTabList = $('<ul />', {
+                    id: `list${tabNumber}`,
+                    class: 'list'
+                });
+
+                const newListItem1 = $('<li />', {
+                    id: `item${tabNumber}1`,
+                    text: `item${1}`,
+                    class: 'list__item'
+                });
+
+                const newListItem2 = $('<li />', {
+                    id: `item${tabNumber}2`,
+                    text: `item${2}`,
+                    class: 'list__item'
+                });
+
+                const newTabDelete = $('<button />', {
+                    id: `delete${tabNumber}`,
+                    text: '-',
+                    class: 'delete'
+                });
+
+                //Добавление DOM - узлов
+                lastTabButton.after(newTabButton);
+                newTabList.append(newListItem1).append(newListItem2);
+                $('#lists').append(newTabList);
+                $('#btns-delete').append(newTabDelete);
+
+                //Новая кнопка становится последней
+                lastTabButton = newTabButton;
+
+                //Обработчики
+                newTabButton.on('click', choiceTab);
+                newTabDelete.on('click', deleteTab)
+
+            }
+
+            //Добавление пункта
+            function addItem(){
+
+                const input = $('#newItem');
+                const text = input.val();
+                const list = $('.activeList');
+                let numberItem = parseInt(list.children().last().attr('id').slice(4, this.length));
+
+                const item = $('<li />', {
+                    id: `item${++numberItem}`,
+                    text: `${text}`,
+                    class: 'list__item'
+                });
+
+                //Добавление элемента в DOM
+                list.append(item);
+
+                //Отправление списка по ajax
+                sendList(list);
+
+                //Очистка формы
+                input.val('');
+
+            }
+
+            //Отправка списка по ajax
+            function sendList(list){
+
+                //Создание массива элементов
+                const itemsDOM = list.children();
+                let items = [];
+                for (let i = 0; i < itemsDOM.length; i++){
+
+                    let item = {
+                                id: $(itemsDOM[i]).attr('id'),
+                                class: $(itemsDOM[i]).attr('class'),
+                                text: $(itemsDOM[i]).text()
+                            };
+
+                    items.push(item)
+                }
+
+                //Формирование данных
+                const data = {
+                    listId: list.attr('id'),
+                    items,
+                };
+
+                console.log(data);
+                // $.ajax({
+                //     url: 'some-url',
+                //     type: 'post',
+                //     dataType: 'json',
+                //     data,
+                //     success: function(data) {
+                //
+                //     }
+                // })
+
+            }
+
+            //Обработчики события для кнопок
+            button1.on('click', choiceTab);
+            button2.on('click', choiceTab);
+            button3.on('click', choiceTab);
+            button4.on('click', choiceTab);
+
+            delete1.on('click', deleteTab);
+            delete2.on('click', deleteTab);
+            delete3.on('click', deleteTab);
+            delete4.on('click', deleteTab);
+
+            addTabButton.on('click', addTab);
+
+            addItemButton.on('click', addItem);
+        })
+
+    </script>
+</head>
+<body>
+<h2>Табы</h2>
+<div id="panel">
+    <div id="btns">
+        <div id="btn0"></div>
+        <button id="btn1" class="btn-tab activeButton">Таб</button>
+        <button id="btn2" class="btn-tab">Таб</button>
+        <button id="btn3" class="btn-tab">Таб</button>
+        <button id="btn4" class="btn-tab">Таб</button>
+        <button class="add">+</button>
+    </div>
+    <div id="btns-delete">
+        <button id="delete1" class="delete">-</button>
+        <button id="delete2" class="delete">-</button>
+        <button id="delete3" class="delete">-</button>
+        <button id="delete4" class="delete">-</button>
+    </div>
+</div>
+<div id="lists">
+    <ul id="list1" class="activeList list">
+        <li id="item11" class="list__item">item1</li>
+        <li id="item12" class="list__item">item2</li>
+    </ul>
+    <ul id="list2" class="list">
+        <li id="item21" class="list__item">item3</li>
+        <li id="item22" class="list__item">item4</li>
+    </ul>
+    <ul id="list3" class="list">
+        <li id="item31" class="list__item">item5</li>
+        <li id="item32" class="list__item">item6</li>
+    </ul>
+    <ul id="list4" class="list">
+        <li id="item41" class="list__item">item7</li>
+        <li id="item42" class="list__item">item8</li>
+    </ul>
+</div>
+<form>
+    <label for="newItem">Введите пункт списка</label>
+    <input id="newItem" type="text">
+    <button id="sendNewItem" type="button">Добавить</button>
+</form>
+</body>
+</html>

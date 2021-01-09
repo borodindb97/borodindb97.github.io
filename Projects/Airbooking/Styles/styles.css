@@ -1,0 +1,993 @@
+@keyframes transparency {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes transparency-dop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes expansion-dop {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.Container {
+  width: 1800px;
+  height: 7920px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+header {
+  background-color: #ffffff;
+  width: inherit;
+  height: 1131px;
+}
+nav {
+  width: 1800px;
+  height: 96px!important;
+}
+nav button {
+  border-color: white!important;
+}
+.brandName {
+  font-family: BodoniSvtyTwoSCITCTT;
+  color: #c19b76 !important;
+  font-size: 48px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0 auto;
+}
+header ul {
+  list-style-type: none;
+}
+.Menu {
+  text-decoration: none;
+  font-family: icofont;
+  color: #2c2d2d;
+  font-size: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+}
+.Menu:hover {
+  border-bottom: #c19b76 2px solid;
+  text-decoration: none;
+  color: #2c2d2d;
+}
+.Menu:active {
+  opacity: 0.5;
+}
+#navbarToggleExternalContent2 {
+  float: right;
+}
+.headerInside {
+  width: 1685px;
+  height: 1035px;
+  float: right;
+  background: url('../Images/find.png') no-repeat;
+  background-size: cover;
+}
+h1 {
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 81px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  width: 750px;
+  margin: 227px 0 0 450px;
+  animation: transparency;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+.headerButton {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 215px;
+  height: 67px;
+  width: 245px;
+  height: 78px;
+  border-radius: 30px;
+  margin: 44px 0 0 690px;
+  font-family: Open Sans;
+  color: #686868;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+  animation: expansion-dop 1.5s linear;
+}
+.headerButton:hover {
+  text-decoration: none;
+  color: #686868;
+}
+.check {
+  width: 962px;
+  height: 197px;
+  background: #ffffff;
+  margin: 97px 0 0 362px;
+  animation: transparency-dop 3s ease-in;
+}
+.check h3 {
+  font-family: Open Sans;
+  color: #939393;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0 0 155px;
+  float: left;
+}
+.check h3:nth-child(1) {
+  margin-left: 76px;
+}
+.check form {
+  float: left;
+}
+.check form input {
+  font-family: GildaDisplay;
+  color: #939393;
+  font-size: 89px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+  border: none;
+  float: left;
+  margin: 15px 0 0 137px;
+}
+.check input:focus {
+  outline: none;
+}
+.check form input:nth-child(1) {
+  margin-left: 63px;
+}
+.check form input:nth-child(3) {
+  margin-left: 125px;
+}
+.check form select {
+  width: 86px;
+  height: 25px;
+  font-family: GildaDisplay;
+  color: #939393;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  float: left;
+  margin: 20px 0 0 145px;
+}
+.check form select:focus {
+  outline: none;
+}
+.check select:nth-child(4) {
+  margin-left: 70px;
+  clear: left;
+}
+.check a {
+  display: block;
+  background-color: #0e6fb3;
+  width: 250px;
+  height: 197px;
+  float: right;
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  padding-top: 60px;
+}
+.check a:hover {
+  text-decoration: none;
+}
+.headerIcons {
+  float: left;
+}
+.headerIcons a {
+  display: block;
+  color: #999999;
+  margin-top: 20px;
+  margin-left: 42px;
+}
+.headerIcons a:first-child {
+  margin-top: 383px;
+  margin-left: 45px;
+}
+.Rooms {
+  clear: right;
+  padding-top: 115px;
+}
+.roomsName {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  width: 361px;
+  height: 52px;
+  margin: 0 auto 89px auto;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .Rooms .container {
+    max-width: 1170px!important;
+    padding: 0;
+  }
+}
+.Rooms .row {
+  width: 1170px;
+  margin: 0;
+}
+.Rooms .col {
+  width: 370px;
+  height: 269px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  background: url('../Images/news1.png');
+  position: relative;
+}
+.Rooms #row1 .col:nth-child(odd) {
+  background: url('../Images/news2.png');
+}
+.Rooms #row2 .col:nth-child(even) {
+  background: url('../Images/news2.png');
+}
+.Rooms .col:nth-child(3n) {
+  margin-right: 0;
+}
+.Rooms a {
+  display: block;
+  text-decoration: none;
+  background-color: #c19b76;
+  width: 141px;
+  height: 39px;
+  font-family: Open Sans;
+  color: #ffffff;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  text-align: center;
+  padding-top: 8px;
+  margin: 158px 0 0 115px;
+}
+.Rooms p {
+  position: absolute;
+  left: 148px;
+  top: 215px;
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  color: #ffffff;
+}
+.Best {
+  background-color: #eff4f8;
+  width: 1800px;
+  height: 953px;
+  margin-top: 95px;
+  position: relative;
+}
+.Best img {
+  width: 950px;
+  height: 690px;
+  top: 130px;
+  left: 315px;
+  position: absolute;
+}
+.bestBlock {
+  position: absolute;
+  top: 267px;
+  left: 950px;
+  background: #ffffff;
+  box-shadow: 0px 3px 21px 0px rgba(181, 203, 221, 0.3);
+  width: 535px;
+  height: 420px;
+}
+.bestBlock h2 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  font-size: 60px;
+  margin: 53px 0 0 49px;
+  width: 370px;
+  text-align: left;
+}
+.bestBlock p {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 30px 0 0 52px;
+  width: 430px;
+}
+.Services h2 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin: 108px auto 126px auto;
+}
+@media (min-width: 1200px) {
+  .Services .container {
+    max-width: 1166px;
+    max-height: 205px;
+    padding: 0;
+  }
+}
+.Services .row {
+  width: 1166px;
+  margin: 0;
+}
+.Services .col {
+  width: 366px;
+  margin-right: 34px;
+  padding: 0;
+}
+.Services img {
+  margin-left: 162px;
+  margin-bottom: 36px;
+}
+.Services img[src="Images/sport.png"] {
+  margin-bottom: 28px;
+}
+.Services img[src="Images/pickup.png"] {
+  margin-bottom: 44px;
+}
+.Services h3 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+}
+.Services p {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-align: center;
+}
+.Services .col:nth-child(3n) {
+  margin-right: 0;
+}
+.Find {
+  margin-top: 147px;
+  height: 1027px;
+}
+.Find img {
+  width: 1043px;
+  height: 1027px;
+  float: left;
+}
+.findBlock {
+  background-color: #0e6fb3;
+  width: 757px;
+  height: 1027px;
+  float: left;
+}
+.findBlock h2 {
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 81px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  font-size: 90px;
+  margin: 100px 0 0 84px;
+  text-align: left;
+}
+.findBlock p {
+  font-family: Open Sans;
+  color: #ffffff;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 55px 0 0 86px;
+  width: 591px;
+}
+.findBlock a {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 215px;
+  height: 67px;
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  padding-top: 15px;
+  margin: 50px 0 0 88px;
+}
+.Guest h2 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin-top: 119px;
+}
+.Guest p {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 35px 0px rgba(181, 203, 221, 0.43);
+  width: 770px;
+  height: 275px;
+  padding: 47px 68px 0 43px;
+  margin-left: 515px;
+  margin-top: 97px;
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.Guest img {
+  width: 125px;
+  height: 125px;
+  margin: 51px 0 0 699px;
+  float: left;
+}
+.guestName {
+  width: 253px;
+  float: left;
+}
+.Guest h3 {
+  font-family: GildaDisplay;
+  color: #7d7d7d;
+  font-size: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 80px 0 10px 24px;
+  float: left;
+}
+.Guest h4 {
+  float: left;
+  font-family: GildaDisplay;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin-left: 24px;
+}
+.videoBlock {
+  margin-top: 81px;
+  position: relative;
+  width: 1800px;
+  height: 682px;
+  float: left;
+}
+.videoBlock h2 {
+  position: absolute;
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 81px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin: 173px 0 0 607px;
+  width: 588px;
+}
+video {
+  width: 1800px;
+  height: 682px;
+}
+.News {
+  float: left;
+  margin-top: 107px;
+  width: 1800px;
+}
+.News h2 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 72px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto 104px auto;
+}
+@media (min-width: 1200px) {
+  .News .container {
+    max-width: 1166px;
+    max-height: 616px;
+    padding: 0;
+  }
+}
+.News .row {
+  margin: 0;
+  width: 1166px;
+}
+.News .col {
+  margin-right: 30px;
+  padding: 0;
+}
+.News .col:nth-child(3) {
+  margin-right: 0;
+}
+.News img {
+  width: 371px;
+  height: 294px;
+}
+.newsDescription {
+  border-width: 0.5px;
+  border-color: #dedede;
+  border-style: solid;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 35px 0px rgba(181, 203, 221, 0.43);
+  height: 322px;
+}
+.News .newsDescription > h3 {
+  font-family: GildaDisplay;
+  color: #686868;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin: 48px 0 0 25px;
+}
+.News .newsDescription > h4 {
+  font-family: Open Sans;
+  color: #a2a2a2;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin: 15px 0 0 29px;
+}
+.News .newsDescription > p {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 16px 0 0 26px;
+}
+.News .newsDescription > a {
+  display: block;
+  text-decoration: none;
+  background-color: #0e6fb3;
+  width: 121px;
+  height: 45px;
+  margin: 25px 0 40px 27px;
+  padding-top: 8px;
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+}
+.newsBlock {
+  display: block;
+  height: 294px;
+  background: url('../Images/news2.png') no-repeat;
+  background-size: cover;
+}
+.newsBlock:nth-child(2) {
+  margin-top: 28px;
+}
+.newsBlock h3 {
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 15px 25px;
+  padding-top: 212px;
+}
+.newsBlock h4 {
+  font-family: Open Sans;
+  color: #ffffff;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin-left: 29px;
+}
+.newsBlock:hover {
+  text-decoration: none;
+}
+footer {
+  background-color: #454545;
+  width: 1800px;
+  height: 582px;
+  float: left;
+  margin-top: 128px;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 113px 468px 95px 313px;
+}
+.footerContacts {
+  width: 343px;
+  margin-right: 57px;
+}
+.footerContacts h2 {
+  font-family: BodoniSvtyTwoSCITCTT;
+  color: #c19b76 !important;
+  font-size: 48px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 0 auto;
+}
+.footerContacts p {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  color: #cfcfcf;
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+.contacts {
+  margin-bottom: 31px;
+  height: 50px;
+}
+.contacts i,
+.contacts img {
+  width: 32px;
+  height: 43px;
+  float: left;
+  margin-top: 7px;
+  color: #c7c7c7;
+}
+.contacts h3 {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  color: #cfcfcf;
+  margin-left: 16px;
+  float: left;
+  margin-bottom: 0;
+  width: 204px;
+}
+.footerLinks {
+  width: 258px;
+  margin-right: 144px;
+}
+.footerLinks h2 {
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 25px;
+}
+.links:nth-child(3) {
+  margin-left: 73px;
+}
+.footerLinks a {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  color: #cfcfcf;
+  line-height: 36px;
+}
+.footerConnect {
+  width: 208px;
+}
+.footerConnect h2 {
+  font-family: GildaDisplay;
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  line-height: 24px;
+}
+.footerConnect a {
+  display: inline-block;
+  margin-top: 52px;
+  margin-left: 20px;
+  color: #cfcfcf;
+}
+.footerConnect a:nth-child(2) {
+  margin-left: 0;
+}
+footer h4 {
+  font-family: Open Sans;
+  color: #7d7d7d;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  line-height: 36px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  color: #cfcfcf;
+}
+@media all and (max-width: 576px) {
+  .Container {
+    width: 576px;
+    height: 7022px;
+  }
+  header {
+    height: 250px;
+  }
+  nav {
+    width: 576px;
+  }
+  .headerIcons a {
+    display: none;
+  }
+  .headerIcons a:first-child {
+    margin-top: 10px;
+    margin-left: 190px;
+  }
+  .headerInside {
+    background: white;
+    width: 576px;
+    height: 210px;
+  }
+  .headerInside h1,
+  .headerInside > a {
+    display: none;
+  }
+  .check {
+    width: 576px;
+    margin: 20px 0 0 0;
+  }
+  .check h3 {
+    margin: 30px 0 0 30px;
+  }
+  .check h3:nth-child(1) {
+    margin-left: 35px;
+  }
+  .check a {
+    width: 210px;
+    height: 145px;
+    margin-top: 34px;
+    margin-right: 20px;
+    padding-top: 38px;
+  }
+  .check form input {
+    margin: 15px 0 0 12px;
+  }
+  .check form input:nth-child(1) {
+    margin-left: 25px;
+  }
+  .check form input:nth-child(3) {
+    margin-left: 0;
+  }
+  .check form select {
+    margin-left: 20px;
+  }
+  .check form select:nth-child(4) {
+    margin-left: 45px;
+  }
+  .Rooms {
+    padding-top: 20px;
+  }
+  .Rooms .row {
+    width: 370px;
+    margin: 0 auto;
+  }
+  .Rooms .col {
+    width: 370px;
+    margin-right: 0;
+  }
+  .Rooms a {
+    margin-left: 120px;
+  }
+  .Rooms p {
+    left: 150px;
+  }
+  .Best {
+    width: 576px;
+    height: 520px;
+    margin-top: 20px;
+  }
+  .Best img {
+    display: none;
+  }
+  .bestBlock {
+    left: 12px;
+    top: 50px;
+  }
+  .bestBlock h2 {
+    text-align: center;
+    margin-left: 90px;
+  }
+  .bestBlock p {
+    margin-left: 70px;
+  }
+  .Services h2 {
+    margin: 30px auto 30px auto;
+  }
+  .Services .container {
+    margin-left: 8px;
+    padding-left: 0;
+  }
+  .Services .row {
+    width: 540px;
+  }
+  .Services .col {
+    width: 576px;
+    margin: 0;
+  }
+  .Services img {
+    margin-left: 73px;
+  }
+  .Services img[src="Images/pickup.png"] {
+    margin-left: 60px;
+  }
+  .Find {
+    margin-top: 30px;
+  }
+  .Find img {
+    display: none;
+  }
+  .findBlock {
+    width: 576px;
+  }
+  .findBlock h2 {
+    margin-top: 30px;
+  }
+  .findBlock p {
+    width: 400px;
+  }
+  .findBlock a {
+    margin-left: 175px;
+  }
+  .Guest {
+    display: none;
+  }
+  .videoBlock {
+    width: 576px;
+    height: 220px;
+  }
+  video {
+    width: 576px;
+    height: 200px;
+  }
+  .News {
+    margin-top: 0;
+    width: 576px;
+  }
+  .News h2 {
+    margin-bottom: 30px;
+  }
+  .News .row {
+    width: 540px;
+  }
+  .News .col {
+    margin-left: 70px;
+  }
+  .newsDescription {
+    width: 371px;
+  }
+  .newsBlock {
+    margin-top: 28px;
+    width: 371px;
+  }
+  .News .col:nth-child(3) {
+    margin-top: 28px;
+  }
+  footer {
+    width: 576px;
+    height: 350px;
+    margin-top: 30px;
+  }
+  .footerLinks,
+  .footerConnect {
+    display: none;
+  }
+  .footerContainer {
+    margin-right: 0;
+    margin-top: 30px;
+    margin-left: 85px;
+    margin-bottom: 40px;
+    width: 400px;
+  }
+  .footerContacts {
+    width: 450px;
+    margin-right: 0;
+  }
+  .footerContacts h2 {
+    text-align: center;
+  }
+  .contacts {
+    float: left;
+    width: 50%;
+  }
+  .contacts h3 {
+    width: 152px;
+  }
+}

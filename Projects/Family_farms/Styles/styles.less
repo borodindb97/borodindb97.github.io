@@ -1,0 +1,690 @@
+@import "variables";
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1920px;
+  height: 9157px;
+  margin: 0 auto;
+  background: @container-color;
+}
+
+header{
+    width: 1920px;
+    height: 900px;
+    position: relative;
+    background: url("../Images/header.png") no-repeat;
+    background-size: cover;
+}
+
+nav{
+  background-color: @background-color;
+  width: 1920px;
+  height: 50px;
+}
+
+.logo{
+  background: url("../Images/logo.png") no-repeat center center, #81c14b;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 860px;
+  margin-top: -50px;
+
+}
+
+.logo img{
+  width: 129px;
+  height: 129px;
+  padding: 35px 0 0 35px;
+
+}
+
+.headerMain{
+  height: 850px;
+  width: inherit;
+}
+
+.headerInside{
+  width: 750px;
+  margin-left: 392px;
+  padding-top: 245px;
+}
+
+.headerName{
+  font-family: @first-font;
+  color: @background-color;
+  font-size: 76px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  height: 62px;
+}
+
+.headerText{
+  font-family: @second-font;
+  color:  @background-color;
+  font-size: 25px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 38px;/* Приближение из-за подстановки шрифтов */
+  text-align: justify;
+  margin-top: 49px;
+  height: 142px;
+  width: 674px;
+}
+
+.headerInside a{
+  .Button1();
+  margin-top: 62px;
+  margin-bottom: 100px;
+}
+
+main{
+  position: relative;
+}
+
+.categoriesBlocks{
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  margin-left: 390px;
+  margin-top: -118px;
+  position: relative;
+}
+
+.Vegetables{
+  .categoriesBlockSize();
+  background: url("../Images/vegetable.png");
+}
+
+.Fruit{
+  .categoriesBlockSize();
+  background: url("../Images/Fruit.png") no-repeat;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.Meat{
+  .categoriesBlockSize();
+  background: url("../Images/Meat.png") no-repeat;
+  background-size: cover;
+  margin-left: 30px;
+}
+
+.Meat span, .Fruit span, .Vegetables span{
+  .categoriesBlockText();
+}
+
+.Vegetables span{
+  margin-left: 35px;
+}
+
+.ViewCategories{
+  .Button2();
+  margin-top: 65px;
+  margin-left: 780px;
+}
+
+.bee{
+  width: 1238px;
+  height: 700px;
+  background: url("../Images/bee.png");
+  margin-top: 107px;
+  position: relative;
+}
+
+.honey{
+  position: absolute;
+  left: 872px;
+  top: 72px;
+  width: 652px;
+  height: 523px;
+  background: url('../Images/honey.png') no-repeat;
+}
+
+.honeyName{
+  .heading1();
+  padding-top: 75px;
+  margin-left: 67px;
+}
+
+.bee p{
+  .Text1();
+  margin-top: 33px;
+  margin-left: 67px;
+  width: 488px;
+}
+
+.bee a{
+  .Button1();
+  margin-left: 195px;
+  margin-top: 44px;
+}
+
+.basket{
+  width: 1920px;
+  height: 700px;
+  margin-top: 175px;
+  background: url("../Images/basket.png") no-repeat;
+  position: relative;
+}
+
+.specialOffer{
+  width: 945px;
+  height: 548px;
+  position: absolute;
+  background: url("../Images/specialOffer.png") no-repeat;
+  left: 488px;
+  top: -100px;
+}
+
+.specialOfferName{
+  .heading1();
+  line-height: 74px;
+  margin-top: 55px;
+  margin-left: 97px;
+}
+
+.basket p{
+  .Text1();
+  margin-top: 34px;
+  margin-left: 97px;
+}
+
+.basket a{
+  .Button1();
+  margin-top: 42px;
+  margin-left: 373px;
+  width: 197px;
+}
+
+.bestsellersName{
+  .heading1();
+  margin-top: 96px;
+  margin-left: 838px;
+}
+
+.bestsellersContainer{
+  display: flex;
+  flex-direction: row;
+  width: 1142px;
+  margin: 64px 0 0 390px;
+  height: 415px;
+}
+
+.Peaches, .Pepper, .Cucumbers, .Blueberries{
+  width: 263px;
+  height: 415px;
+  position: relative;
+}
+
+.Pepper, .Cucumbers, .Peaches{
+  margin-right: 30px;
+}
+
+.bestsellersContainer img{
+  width: 263px;
+  height: 255px;
+}
+
+.bestsellersContainer a{
+  display: block;
+  background: url("../Images/cart.png") no-repeat center center, #c7141d;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  left: 195px;
+  top: 187px;
+}
+
+.bestsellersInfo{
+  background-color:  #fcecc9;
+  width: 263px;
+  height: 160px;
+}
+
+.bestsellersInfoName{
+  .Text2();
+  margin: -1px 0 0 28px;
+  padding-top: 33px;
+}
+
+.bestsellersContainer p{
+  font-family: @second-font;
+  color:  #373737;
+  font-size: 20px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin: 10px 0 0 28px;
+}
+
+.Bestsellers > a{
+  .Button2();
+  margin: 74px 0 0 775px;
+}
+
+.Process{
+  display: flex;
+  flex-direction: row;
+  margin-top: 155px;
+}
+
+.Process > img{
+  width: 700px;
+  height: 1000px;
+  margin-left: 243px;
+}
+
+.ProcessName{
+  .heading2();
+  margin-top: 82px;
+  margin-left: 131px;
+}
+
+.ProcessRight > p{
+  .Text1();
+  margin-top: 39px;
+  margin-left: 131px;
+  width: 419px;
+  margin-bottom: 0;
+}
+
+.ProcessNumber{
+  height: 167px;
+}
+
+.ProcessNumber img{
+  width: 67px;
+  height: 67px;
+  margin-left: 131px;
+  margin-top: 72px;
+  float: left;
+  clear: left;
+}
+
+.ProcessNumber p{
+  .Text1();
+  color: @font-color1;
+  width: 266px;
+  margin: 106px 0 0 29px;
+  float: left;
+}
+
+.meetName{
+  .heading2();
+  margin-top: 130px;
+  margin-left: 820px;
+}
+
+.Meet p{
+  .Text1();
+  margin: 39px 0 0 626px;
+}
+
+.meetContainer{
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  width: 1920px;
+  margin-top: 81px;
+}
+
+.meetContainer > img{
+  width: 360px;
+  height: inherit;
+}
+
+.David, .Andy{
+  width: 555px;
+  height: inherit;
+  margin: 0 30px;
+  position: relative;
+}
+
+.Andy:nth-child(3){
+  margin-left: 0;
+}
+
+.David{
+  background: url("../Images/David.png") no-repeat;
+}
+.Andy{
+  background: url("../Images/Andy.png") no-repeat;
+}
+
+.DavidBlock, .AndyBlock{
+  position: absolute;
+  width: 359px;
+  height: 150px;
+  left: 99px;
+  top: 150px;
+}
+
+.DavidBlock{
+  background: url("../Images/David2.png") no-repeat;
+}
+
+.AndyBlock{
+  background: url("../Images/Andy2.png") no-repeat;
+}
+
+.DavidName, .AndyName{
+  .Text2();
+  text-align: center;
+  color: #000000;
+  width: 188px;
+  margin-left: 78px;
+  padding-top: 36px;
+}
+
+.AndyName{
+  margin-left: 47px;
+  width: 264px;
+}
+
+.DavidBlock a, .AndyBlock a{
+  .Text3();
+  display: block;
+  margin-top: 21px;
+  margin-left: 117px;
+}
+
+.clientsName{
+  .heading2();
+  margin: 195px 0 0 795px;
+}
+
+.clientsContainer{
+  display: flex;
+  flex-direction: row;
+  height: 381px;
+  width: 1140px;
+  margin: 45px 0 0 390px;
+}
+
+.clientBLock{
+  background-color:  #daefb3;
+  width: 360px;
+  height: 381px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.clientBLock:nth-child(3){
+  margin-right: 0;
+}
+
+.clientBLock p{
+  .Text3();
+  text-decoration: none;
+  color: @font-color1;
+  width: 292px;
+  padding: 45px 0 0 35px;
+  margin: 0;
+}
+
+.clientBLock img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 298px;
+  left: 34px;
+}
+
+.clientName{
+  display: block;
+  position: absolute;
+  right: 33px;
+  top: 280px;
+  font-family: @second-font;
+  color:  @font-color1;
+  font-size: 20px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 30px;/* Приближение из-за подстановки шрифтов */
+  text-decoration: underline;
+  text-align: right;
+}
+
+.clientDescription{
+  display: block;
+  position: absolute;
+  right: 33px;
+  top: 305px;
+  font-family: @second-font;
+  color:  @font-color1;
+  font-size: 20px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 30px;/* Приближение из-за подстановки шрифтов */
+  text-align: right;
+}
+
+.Clients > a{
+  .Button2();
+  margin: 100px auto;
+}
+
+.partnersName{
+  .heading2();
+  margin: 114px 0 80px 790px;
+  width: 400px;
+}
+
+.partnersContainer{
+  display: flex;
+  flex-direction: row;
+  margin-left: 409px;
+}
+
+.questionsName{
+  .heading2();
+  margin: 100px 0 0 820px;
+}
+
+.Questions p{
+  .Text1();
+  margin-top: 39px;
+  margin-left: 784px;
+}
+
+.videoContainer{
+  display: flex;
+  flex-direction: row;
+  width: 1920px;
+  height: 640px;
+  margin-top: 50px;
+}
+
+.videoLeft{
+  height: inherit;
+  width: 391px;
+  background: url("../Images/videobackground1.png") no-repeat
+}
+
+video{
+  width: 1138px;
+  height: 640px;
+}
+
+.videoRight{
+  height: inherit;
+  width: 391px;
+  background:  url("../Images/videobackground2.png") no-repeat right bottom;
+}
+
+.findName{
+  .heading2();
+  margin-top: 85px;
+  margin-left: 860px;
+}
+
+.findContainer{
+  width: 1920px;
+  height: 400px;
+  background: url("../Images/Find.png") no-repeat;
+  background-size: cover;
+  margin-top: 59px;
+  position: relative;
+}
+
+.here{
+  background-color:  #fc7647;
+  width: 190px;
+  height: 54px;
+  position: absolute;
+  left: 425px;
+  top: 77px;
+  font-family: @second-font;
+  color:  @background-color;
+  font-size: 25px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  padding-top: 23px;
+}
+
+.findContainer img{
+  position: absolute;
+  width: 37px;
+  height: 54px;
+  top: 168px;
+  left: 505px;
+}
+
+.contacts{
+  width: 455px;
+  height: 332px;
+  background: url("../Images/Contacts.png") no-repeat;
+  position: absolute;
+  top: 105px;
+  left: 1074px;
+}
+
+.contactsName{
+  .Text2();
+  color: @font-color2;
+  margin: 49px 0 24px 46px;
+}
+
+.contactsContact{
+  margin: 8px 0 0 46px;
+  font-family: @second-font;
+  color:  @font-color2;
+  font-size: 20px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+
+.contactsContact span{
+  margin-left: 30px;
+}
+
+.contactsContact span >span{
+  margin-left: 93px;
+}
+
+.Best{
+  margin: 112px 0 0 393px;
+  background: url("../Images/Best.png") no-repeat;
+  width: 1136px;
+  height: 350px;
+  position: relative;
+}
+
+.Best span{
+  font-family: @first-font;
+  color: @background-color;
+  font-size: 76px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  display: inline-block;
+  margin: 153px 0 0 240px;
+}
+
+.Best a{
+  .Button1();
+  font-family:@second-font;
+  color:  @background-color;
+  font-size: 49px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  width: 262px;
+  height: 70px;
+  position: absolute;
+  left: 680px;
+  top: 121px;
+  padding-top: 35px;
+}
+
+footer{
+  width: 1920px;
+  height: 429px;
+  margin-top: 125px;
+  background-color:  @background-color;
+}
+
+.footerLeft{
+  height: inherit;
+  width: 960px;
+  float: left;
+  background: url("../Images/FooterLeft.png") ;
+}
+
+.footerRight{
+  height: inherit;
+  width: 960px;
+  background: url("../Images/FooterRight.png") bottom right;
+  float: left;
+  position: relative;
+}
+
+.footerName{
+  font-family: @first-font;
+  color:  #81c14b;
+  font-size: 61px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 92px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 179px;
+  margin: 120px 0 0 391px;
+  float: left;
+}
+
+.footerAdress{
+  font-family: @second-font;
+  color:  @font-color1;
+  font-size: 25px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin: 163px 0 0 685px;
+  height: 300px;
+}
+
+.footerAdress span{
+  display: block;
+  font-family: @second-font;
+  color:  @font-color3;
+  font-size: 20px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 32px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  margin-top: 25px;
+}
+
+.footerRight a{
+  .Button1();
+  width: 360px;
+  height: 52px;
+  position: absolute;
+  right: 390px;
+  bottom: 177px;
+  padding-top: 20px;
+}
+
+

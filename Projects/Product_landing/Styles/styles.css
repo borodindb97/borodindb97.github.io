@@ -1,0 +1,532 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1280px;
+    height: 2863px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1280px;
+    height: 323px;
+    background-color:  #445161;
+}
+
+.headerInside{
+    width: 1180px;
+    height: 273px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+h1{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+    top: 137px;
+    left: -30px;
+    margin: 0;
+
+}
+
+ul li{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.imageProduct{
+    background-color:  #ffffff;
+    width: 469px;
+    height: 214px;
+    position: absolute;
+    left: 711px;
+}
+
+main{
+    width: 1280px;
+    height: 2386px;
+}
+
+.About{
+    width: 1280px;
+    height: 341px;
+}
+
+.AboutInside{
+    width: 1180px;
+    height: 273px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+h2{
+    font-family: Arial;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    position: absolute;
+}
+
+.imageAbout{
+    background-color:  #445161;
+    width: 430px;
+    height: 245px;
+    position: absolute;
+    left: 750px;
+}
+
+.AboutText1{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 649px;
+    height: 63px;
+    margin-top: 60px;
+}
+
+.AboutText2{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 649px;
+    height: 63px;
+    margin-top: 20px;
+}
+
+.plusesProduct{
+    width: 1280px;
+    height: 430px;
+    background-color: #f6f6f6;
+}
+
+.plusesProductInside{
+    width: 1180px;
+    height: 273px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+.plusesProductInside h2{
+    margin: 0 auto;
+    width: 354px;
+    position: relative;
+}
+
+.pluses{
+    width: 590px;
+    height: 63px;
+    float: left;
+    margin-top: 29px;
+}
+
+.marker{
+    width: 32px;
+    height: 32px;
+    background: url("../Images/Shape_3.png");
+    float: left;
+    margin-top: 3px;
+}
+
+.plusesText{
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    float: left;
+    width: 526px;
+    margin-left: 9px;
+}
+
+.scrinshots{
+    width: 1280px;
+    height: 487px;
+}
+
+.scrinshotsInside{
+    width: 1180px;
+    height: 437px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+.scrinshotsInside h2{
+    margin: 0 auto;
+    width: 160px;
+    position: relative;
+}
+
+.description{
+    width: 570px;
+    height: 150px;
+    margin-top: 34px;
+    float: left;
+}
+
+.descriptionImage{
+    background-color:  #445161;
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+
+.descriptionName{
+    font-family: Arial;
+    color:  #445161;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    float: left;
+    margin-left: 15px;
+}
+
+.descriptionText{
+    float: left;
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 355px;
+    margin-left: 15px;
+}
+
+.Reviews{
+    width: 1280px;
+    height: 460px;
+    background-color: #f6f6f6;
+}
+
+.ReviewsInside{
+    width: 1180px;
+    height: 410px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+.ReviewsName{
+    margin: 0 auto;
+    width: 120px;
+    position: relative;
+}
+
+.ReviewsBlock{
+    width: 577px;
+    float: left;
+    height: 121px;
+    margin-top: 35px;
+}
+
+.ReviewsImage{
+    border-radius: 50%;
+    background-color:  #445161;
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+.ReviewsText{
+    background: url("../Images/bg_review.png") no-repeat;
+    width: 458px;
+    height: inherit;
+    float: left;
+    margin-left: 17px;
+    font-family: Arial;
+    color:  #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 27px;
+    padding-top: 16px;
+}
+
+.ReviewsAuthor{
+    font-family: Arial;
+    color:  #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.ReviewsBlock:nth-child(2n){
+    margin-left: 26px;
+}
+
+.Buy{
+    width: 1280px;
+    height: 656px;
+}
+
+.BuyInside{
+    width: 1280px;
+    height: 606px;
+    position: relative;
+    margin: 0 50px;
+    padding-top: 50px;
+}
+
+.BuyName{
+    position: relative;
+    margin: 0 auto;
+    width: 139px;
+    padding-right: 120px;
+}
+
+.Standart{
+    width: 300px;
+    height: 306px;
+    margin-top: 226px;
+    float: left;
+    margin-left: 95px;
+    background: #445161;
+    border-radius: 7px;
+}
+
+.BlockName{
+    height: 40px;
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.BlockPrice{
+    height: 53px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    background: white;
+    padding-top: 18px;
+    border: 2px solid #445162;
+}
+
+.BlockList{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 19px;
+    margin-bottom: 0;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.BuyButton{
+    display: block;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 260px;
+    height: 29px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: Arial;
+    color:  #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 11px;
+}
+
+.Premium{
+    width: 300px;
+    height: 404px;
+    margin-top: 127px;
+    float: left;
+    margin-left: 45px;
+    background: #445161;
+    border-radius: 7px;
+}
+
+.Lux{
+    width: 300px;
+    height: 499px;
+    margin-top: 29px;
+    float: left;
+    margin-left: 45px;
+    background: #445161;
+    border-radius: 7px;
+}
+
+footer{
+    width: 1280px;
+    height: 559px;
+    background: #445161;
+}
+
+.footerName{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin: 0 auto;
+    width: 120px;
+    padding-top: 53px;
+}
+
+form{
+    float: left;
+    width: 753px;
+    height: 450px;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 490px;
+    height: 40px;
+    margin-top: 31px;
+    margin-left: 249px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+input[type="email"]{
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 490px;
+    height: 40px;
+    margin-top: 21px;
+    margin-left: 249px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+textarea{
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 490px;
+    height: 161px;
+    margin-top: 21px;
+    margin-left: 249px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+input[type="submit"]{
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 140px;
+    height: 40px;
+    margin-top: 21px;
+    margin-left: 429px;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.social{
+    float: left;
+    margin-top: 31px;
+    margin-left: 46px;
+}
+
+.social span{
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.Icq, .email, .phone{
+    margin-top: 18px;
+}
+
+.social > a{
+    display: block;
+    color: #445161;
+    background: white;
+    float: left;
+    width: 42px;
+    height: 37px;
+    margin-right: 10px;
+    margin-top: 32px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footerLine{
+    width: inherit;
+    height: 20px;
+    background: #f6f6f6;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+    clear: left;
+}

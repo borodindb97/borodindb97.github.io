@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Duality Regular";
+    src: url('../fonts/Duality_Regular.otf');
+}
+
+@font-face {
+    font-family: "Algeria_One";
+    src: url("../fonts/Algeria_One.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../Images/yellow-wall.jpg") ;
+}
+
+.container{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 184px;
+    background: url("../Images/header18.jpg");
+}
+
+hr{
+    clear: left;
+}
+
+h1{
+    font-family: "Duality Regular";
+    text-align: center;
+    color: #B22222;
+    font-size: 60px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+#logo{
+    width: 131px;
+    height: 184px;
+    float: left;
+}
+
+.Menu{
+    width: 800px;
+    height: 80px;
+    list-style-type: none;
+    padding: 30px 20px 0 0;
+    margin: 0;
+    float: right;
+}
+
+.Menu a{
+    font-size: 25px;
+    font-family: "Algeria_One", sans-serif;
+    margin-right: 92px;
+}
+
+.Menu li{
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #ce133e;
+}
+
+.ProductDescription{
+    color: #ce4585;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px auto;
+    width: 160px;
+    /*Расположил все описания справа, т.к. иначе будет много свободного места        */
+}
+
+h2, h3{
+    color: #ce133e;
+}
+
+.Description{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.Description td{
+    border: 1px solid black;
+}
+
+.Description td u{
+    font-style: italic;
+}
+
+.DetailedDescription{
+    color: #4d4d57;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+}
+
+.DetailedDescription:first-letter{
+    font-size: 20px;
+    Color:#700e1f;
+}
+
+#Сharacteristic {
+    color: #1f0657;
+    list-style-type: circle;
+    line-height: 20px;
+    margin-left: 150px;
+}
+
+.form{
+    width: 180px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.form[type="Email"]:focus{
+    color: #b5ce80;
+    background: #898252;
+
+}
+
+legend, label{
+    color: #ce133e ;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#textform{
+    width: 180px;
+}
+
+.Button{
+    width: 91px;
+    text-align: center;
+}
+
+.Images{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-right: 5px;
+    float: left;
+}
+
+a img{
+    display: block;
+    float: left;
+}
+
+.Images:hover{
+    border-color: transparent;
+}
+
+.Menu a:hover{
+    color: #700e1f;
+}
+
+footer{
+    display: block;
+    height: 100px;
+    background: url("../Images/header15.jpg");
+}
+
+footer p{
+    display: block;
+    float: right;
+    margin: 0;
+    padding: 25px 20px;
+}
+
+h2{
+    margin: 20px auto;
+    width: 160px;
+}
+
+table {
+    margin: 0 320px;
+}
+
+#ProductDescription2{
+    width: 218px;
+}
+
+#ProductDescription3{
+    width: 255px;
+}
+
+#Button{
+    display: block;
+    background: #ffe4c3;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 70px 44px;
+    border: black solid 1px;
+    line-height: 48px;
+    text-align: center;
+    color: #ce4585;
+    font-size: 18px;
+    border-radius: 4px;
+    /*box-shadow: 0 -25px #f5daba inset;;*/
+}
+
+#Button:hover{
+    background: #f8dcbb;
+}
+
+#Button:active{
+    background: #e6cbaa;
+}
+
+.catalogProduct{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    border: black 1px;
+}
+
+.catalogProduct:nth-child(5n){
+    margin-right: 0;
+    /*Почему то nth-child(3n) отображается не правильно*/
+}
+
+.ProductName{
+    margin-left: 130px;
+}
+
+.More{
+    display: block;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.More:hover{
+    color: #7f0925;
+}
+
+fieldset{
+    width: 180px;
+}
+
+

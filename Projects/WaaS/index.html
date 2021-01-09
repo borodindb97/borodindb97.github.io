@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="dashboard">
+        <div class="main">
+            <header>
+            <h1>WaaS</h1>
+            <img src="images/Векторный_смарт-объект.png" alt="" id="logo">
+            </header>
+            <main>
+                <div class="mode">
+                    <div id="sleep">Сон</div>
+                    <div id="processing" class="activeMode">Переработка</div>
+                    <div id="breeding">Размножение</div>
+                    <div class="money">
+                        <img src="images/cart.png" alt="">
+                        <div class="moneyInfo">
+                            <p class="today">Заработано сегодня</p>
+                            <p class="todayMany">0000<span> рубля</span></p>
+                            <p class="yesterdayMany">0000 <span>заработано вчера</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="parametrs">
+                    <div class="parametr" id="temperature">
+                        <h2>Температура</h2>
+                        <img src="images/Слой_9.png" alt="" id="temperaturePb">
+                        <img src="images/Слой_12.png" alt="" class="markup">
+                        <img src="images/Jekk.png" alt="" class="position position1">
+                        <img src="images/Jekk.png" alt="" class="position position2">
+                        <img src="images/Jekk.png" alt="" class="position active position3">
+                        <img src="images/Jekk.png" alt="" class="position position4">
+                        <img src="images/Jekk.png" alt="" class="position position5">
+                        <span class="position1Text positionText">18</span>
+                        <span class="position2Text positionText">20</span>
+                        <span class="position3Text positionText">22</span>
+                        <span class="position4Text positionText">24</span>
+                        <span class="position5Text positionText">26</span>
+                    </div>
+                    <div class="parametr" id="humidity">
+                        <h2>Влажность</h2>
+                        <img src="images/Слой_24.png" alt="" id="humidityPb">
+                        <img src="images/Слой_12.png" alt="" class="markup">
+                        <img src="images/Jekk.png" alt="" class="position position1">
+                        <img src="images/Jekk.png" alt="" class="position position2">
+                        <img src="images/Jekk.png" alt="" class="position active position3">
+                        <img src="images/Jekk.png" alt="" class="position position4">
+                        <img src="images/Jekk.png" alt="" class="position position5">
+                        <span class="position1Text positionText">72</span>
+                        <span class="position2Text positionText">74</span>
+                        <span class="position3Text positionText">76</span>
+                        <span class="position4Text positionText">78</span>
+                        <span class="position5Text positionText">80</span>
+                    </div>
+                    <div class="parametr" id="ph">
+                        <h2>Кислотность</h2>
+                        <img src="images/Слой_17.png" alt="" id="phPb">
+                        <img src="images/Слой_12.png" alt="" class="markup">
+                        <img src="images/Jekk.png" alt="" class="position position1">
+                        <img src="images/Jekk.png" alt="" class="position position2">
+                        <img src="images/Jekk.png" alt="" class="position active position3">
+                        <img src="images/Jekk.png" alt="" class="position position4">
+                        <img src="images/Jekk.png" alt="" class="position position5">
+                        <span class="position1Text positionText">6</span>
+                        <span class="position2Text positionText">6,5</span>
+                        <span class="position3Text positionText">7</span>
+                        <span class="position4Text positionText">7,5</span>
+                        <span class="position5Text positionText">8</span>
+                    </div>
+                    <div class="parametr" id="food">
+                        <h2>Еда</h2>
+                        <img src="images/Слой_27.png" alt="" id="foodPb">
+                        <img src="images/Слой_12.png" alt="" class="markup">
+                        <img src="images/Jekk.png" alt="" class="position position1">
+                        <img src="images/Jekk.png" alt="" class="position position2">
+                        <img src="images/Jekk.png" alt="" class="position active position3">
+                        <img src="images/Jekk.png" alt="" class="position position4">
+                        <img src="images/Jekk.png" alt="" class="position position5">
+                        <span class="position1Text positionText">200</span>
+                        <span class="position2Text positionText">400</span>
+                        <span class="position3Text positionText">600</span>
+                        <span class="position4Text positionText">800</span>
+                        <span class="position5Text positionText">1000</span>
+                    </div>
+                </div>
+                <div class="recomendation">
+                    <div class="recomendBlock" id="temperatureBlock">
+                        <h3>Температура</h3>
+                        <img src="images/Слой_41.png" id="temperatureIcon" class="icon" alt="">
+                        <p class="recomendText success" ></p>
+                    </div>
+                    <div class="recomendBlock " id="humidityBlock">
+                        <h3>Влажность</h3>
+                        <img src="images/Слой_42.png" id="humidityIcon" class="icon" alt="">
+                        <p class="recomendText success"></p>
+                    </div>
+                    <div class="recomendBlock" id="phBlock">
+                        <h3>Кислотность</h3>
+                        <img src="images/Слой_48.png" id="phIcon" class="icon" alt="">
+                        <p class="recomendText success"></p>
+                    </div>
+                    <div class="recomendBlock" id="foodBlock">
+                        <h3>Еда(мусор)</h3>
+                        <img src="images/Слой_47.png" id="foodIcon" class="icon" alt="">
+                        <p class="recomendText success"></p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<script src="./scripts/jquery-3.3.1.js"></script>
+<script src="scripts/Parametrs.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
