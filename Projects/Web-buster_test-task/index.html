@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-buser_test-task</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <ul class="catalog">
+    </ul>
+    <div class="modal">
+        <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <h2 class="modal__title">Модальное окно</h2>
+        <form action="https://formspree.io/f/xjvpjqjo" method="post" class="modal-form">
+            <div class="form-names">
+                <label class="form-names__title" for="modal-name">Имя</label>
+                <label class="form-names__title" for="modal-number">Телефон</label>
+                <label class="form-names__title" for="modal-email">Email</label>
+                <label class="form-names__title" for="modal-good">Товар</label>
+            </div>
+            <div class="form-areas">
+                <input name="name" class="form-names__input" id="modal-name" type="text" required>
+                <input name="tel" class="form-names__input" id="modal-number" type="tel" required>
+                <input name="email" class="form-names__input" id="modal-email" type="email" required>
+                <input name="text" class="form-names__input" id="modal-good" type="text" required>
+            </div>
+            <button type="submit" id="sendForm">Отправить</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

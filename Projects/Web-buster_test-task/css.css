@@ -1,0 +1,91 @@
+.catalog{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog-item{
+    height: 300px;
+    width: 150px;
+}
+
+.catalog-item__img{
+    height: 180px;
+    width: inherit;
+}
+
+.item-description{
+    width: inherit;
+    height: 120px;
+    text-align: center;
+}
+
+.item-description__text{
+    width: inherit;
+    margin-bottom: 5px;
+}
+
+.item-description__price{
+    height: inherit;
+    width: inherit;
+    font-weight: 700;
+}
+
+.item-description__button{
+    display: block;
+    width: 120px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: deeppink;
+    color: white;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.modal{
+    display: none;
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.form-names, .form-areas{
+    height: 80px;
+}
+
+.form-names__title{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+#sendForm{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 80px;
+    height: 40px;
+}
