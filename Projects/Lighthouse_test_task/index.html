@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LightHouse_test_task</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<div class="page">
+    <h1 class="page__title">Оформление заказа</h1>
+    <div class="page-data">
+        <div class="contacts-data">
+            <h2 class="contacts-data__title">Контактные данные</h2>
+            <section class="recipient">
+                <h3 class="recipient__title">Получатель</h3>
+                <div class="recipient-input">
+                    <input class="recipient__input" type="text" placeholder="Имя*" required>
+                    <input class="recipient__input" type="text" placeholder="Фамилия*" required>
+                    <input id="phone" class="recipient__input" type="tel" placeholder="Номер телефона*" required>
+                    <input class="recipient__input" type="tel" placeholder="Телефон, если не дозвонимся">
+                    <input class="recipient__input" type="text" placeholder="Ваш город*" required>
+                    <span class="recipient__necessary">Не обязательно</span>
+                    <ul class="recipient-cities">
+                        <li class="recipient-cities__city">Москва</li>
+                        <li class="recipient-cities__city">Санкт-Петебрург</li>
+                        <li class="recipient-cities__city">Новосибирск</li>
+                        <li class="recipient-cities__city">Екатеринбург</li>
+                        <li class="recipient-cities__city">Казань</li>
+                        <li class="recipient-cities__city">Нижний Новгород</li>
+                        <li class="recipient-cities__city">Челябинск</li>
+                        <li class="recipient-cities__city">Самара</li>
+                        <li class="recipient-cities__city">Омск</li>
+                        <li class="recipient-cities__city">Ростов-на-Дону</li>
+                        <li class="recipient-cities__city">Уфа</li>
+                        <li class="recipient-cities__city">Красноярск</li>
+                        <li class="recipient-cities__city">Воронеж</li>
+                        <li class="recipient-cities__city">Пермь</li>
+                        <li class="recipient-cities__city">Волгоград</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="obtain">
+                <h3 class="obtain__title">Способ получения</h3>
+                <div class="obtain-btns">
+                    <div class="obtain-btns__btn">Самовывоз</div>
+                    <div class="obtain-btns__btn selected-btn">Доставка</div>
+                </div>
+                <div class="obtain-input">
+                    <input type="text" class="obtain-input__input" placeholder="Улица*" required>
+                    <input type="text" class="obtain-input__input" placeholder="Дом*" required>
+                    <input type="text" class="obtain-input__input" placeholder="Строение">
+                    <input type="text" class="obtain-input__input" placeholder="Корпус">
+                    <input type="text" class="obtain-input__input" placeholder="Подъезд">
+                    <input type="text" class="obtain-input__input" placeholder="Квартира">
+                </div>
+            </section>
+            <section class="delivery">
+                <h3 class="delivery__title">Доставка</h3>
+                <div class="delivery-radios">
+                    <div class="delivery-radio">
+                        <p class="delivery-head">
+                            <input type="radio" name="delivery" class="delivery-head__input" checked>
+                            <span class="delivery-head__text">Стандартная доставка</span>
+                        </p>
+                        <p class="delivery-price">300 <span class="delivery-price__symbol">&#8381;</span></p>
+                    </div>
+                    <div class="delivery-radio">
+                        <p class="delivery-head">
+                            <input type="radio" name="delivery" class="delivery-head__input">
+                            <span class="delivery-head__text">День в день</span>
+                        </p>
+                        <p class="delivery-price">660 <span class="delivery-price__symbol">&#8381;</span> </p>
+                    </div>
+                </div>
+                <input class="delivery__input" type="date">
+                <div class="delivery-time">
+                    <h4 class="delivery-time__title">Время доставки</h4>
+                    <ul class="delivery-btns">
+                        <li class="delivery-btns__btn">с 9 до 18 часов</li>
+                        <li class="delivery-btns__btn selected-btn">с 10 до 20 часов</li>
+                        <li class="delivery-btns__btn">с 12 до 16 часов</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="payment">
+                <h3 class="payment__title">Оплата</h3>
+                <ul class="payment-checks">
+                    <li class="payment-check">
+                        <input type="radio" name="pay" class="payment-check__input" checked>
+                        <span class="payment-check__text">Наличными</span>
+                    </li>
+                    <li class="payment-check">
+                        <input type="radio" name="pay" class="payment-check__input">
+                        <span class="payment-check__text">Банковской картой</span>
+                    </li>
+                    <li class="payment-check">
+                        <input type="checkbox" class="payment-check__input">
+                        <span class="payment-check__text">Прислать SMS с номером заказа на телефон получателя</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="checkout">
+                <span class="checkout__count">3 товара</span>
+                <p class="checkout-result">
+                    <span class="checkout-result__result">Итого:</span>
+                    <span class="checkout-result__price">195 300</span>
+                    <span class="checkout-result__rub">&nbsp;&#8381;</span>
+                </p>
+                <div class="checkout__submit">Оформить заказ</div>
+            </section>
+        </div>
+        <div class="goods">
+            <h2 class="goods__title">В заказе</h2>
+            <p class="goods__count">3 позиции:</p>
+            <ul class="goods-list">
+                <li class="goods-item">
+                    <h3 class="goods-item__title">Цветное МФУ  Ecosys 2035 cdn</h3>
+                    <p class="goods-count">
+                        <span class="goods-count__price">12 500 &#8381; -</span>
+                        <span class="goods-count__count">1 шт</span>
+                    </p>
+                </li>
+                <li><hr class="goods-item__hr"></li>
+                <li class="goods-item">
+                    <h3 class="goods-item__title">Монохромное МФУ Taskalfa 3212i</h3>
+                    <p class="goods-count">
+                        <span class="goods-count__price">90 000 &#8381; -</span>
+                        <span class="goods-count__count">2 шт</span>
+                    </p>
+                </li>
+                <li><hr class="goods-item__hr"></li>
+                <li class="goods-item">
+                    <h3 class="goods-item__title">Цветное МФУ  Ecosys 2035 cdn</h3>
+                    <p class="goods-count">
+                        <span class="goods-count__price">300 &#8381;</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="goods-result">
+                <span class="goods-result__result">Итого:</span>
+                <span class="goods-result__price">195 300</span>
+                <span class="goods-result__rub">&nbsp;&#8381;</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
